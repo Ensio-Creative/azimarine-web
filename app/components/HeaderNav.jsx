@@ -13,7 +13,7 @@ const HeaderNav = () => {
         <p className='my-auto'><Link href={"/services"}>Services</Link></p>
         <p className='my-auto'> <Link href={'/csr'}>CSR</Link> </p>
         <p className='my-auto'><Link href={"/projects"}>Projects</Link> </p>
-        <p className='my-auto'>Contact us</p>
+        <p className='my-auto'><Link href={"/contact"}>Contact us</Link></p>
       </div>
     </header>
   );
