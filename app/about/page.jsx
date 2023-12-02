@@ -1,7 +1,39 @@
 import React from 'react';
 import FrontLayout from '../layout/FrontLayout';
 import HeroSection from '../components/HeroSection';
+import { Collapse } from 'antd';
 
+const items = (panelStyle) => [
+  {
+    key: '1',
+    label: <p className='text-lg font-bold text-blue'>Corporate Pledge of Commitment & Competence</p>,
+    children: <div className='text-[#5E5C84]'>
+      We firmly believe that, through the utilization of our extensive human resources, wealth of experience, skilled workforce, and diverse skillsets, we have the capacity to deliver sustainable and standardized solutions on a per project basis. The sesolutions  arecharacterized  bytheir reliability, trustworthiness, flexibility, and cost-efficiency, meeting and often exceeding the needs and expectations of all our valued clients."
+      <br /><br />
+      Our mission is to assist organizations in achieving their corporate objectives by  deliveringexceptional customer experiences, maintaining  qualitysafety standards, optimizing operational efficiency, ensuring compliance, and promoting sustainability .We achieve this by harnessing the potential of new technology, competent human resources, and constant innovation.
+      <br /> <br />
+      Our mission is to empower organizations in reaching their corporate goals by providing unparalleled customer experiences, upholding rigorous safety standards, enhancing operational efficiency, ensuring full compliance, and championing sustainability. We realize this vision by harnessing the capabilities of cutting-edge technology, skilled human resources, and continuous innovation.
+    </div>,
+    style: panelStyle,
+  },
+  {
+    key: '2',
+    label: <p className='text-lg font-bold text-blue'>Management Team</p>,
+    children: <div className='text-[#5E5C84]'>
+      "In the dynamic realm of oil and gas exploration, our company is guided by a distinguished management team,which collectively boasts an impressive industry experience of over 100 years.Each member of our management team is not only seasoned in their respective roles but also deeply committed to elevating our operational and administrative efficiency.
+      <br /> <br />
+      Our leadership includes individuals with a profound understanding of the oil and gas exploration industry's intricate demands. Their wealth of experience encompasses various facets, from upstream to downstream operations, including drilling, field development, reservoir management, and environmental compliance.
+      <br /> <br />
+
+      With this depthof expertise, our management team excels in navigating the complex challenges of the sector.They are dedicated to ensuring that every project and service delivery not only
+      meets but surpasses industry expectations. This commitment extends to improving exploration techniques,enhancing safety protocols, and promoting sustainable practices in every facet of our operations.
+      <br /> <br />
+
+      In a continually evolving industry, our management team's vision and expertise provide the guiding force necessary to remain at the forefront of oil and gas exploration, setting high standards for operational excellence, safety, and environmental stewardship
+    </div>,
+    style: panelStyle,
+  }
+];
 const AboutPage = () => {
   const work = [
     {
@@ -29,6 +61,15 @@ const AboutPage = () => {
       text: "We believe in the power of collaboration. Our emphasis on teamwork ensures that our efforts are synchronized and aligned to achieve project success."
     },
   ]
+  const panelStyle = {
+    margin: 24,
+    background: "white",
+    borderTop: '1px solid #5E5C84',
+    borderBottom: '1px solid #5E5C84',
+    borderRadius: "0px"
+  };
+
+
   return (
     <FrontLayout>
       <HeroSection img={"about"} text={"About us"} />
@@ -66,7 +107,12 @@ const AboutPage = () => {
       </section>
 
       <section className='px-20 py-10'>
-        
+        <Collapse
+          defaultActiveKey={['0']}
+          ghost={true}
+          expandIconPosition={"end"}
+          items={items((panelStyle))}
+        />
       </section>
 
       <section className='px-20 py-10 bg-[#F9F9F9]'>
