@@ -10,8 +10,8 @@ const HeaderNav = () => {
       <div className='w-1/2 flex justify-between text-blue text-sm'>
 
         <p className='my-auto'><Link href={"/about"}> About us</Link></p>
-        <p className='my-auto'>Services</p>
-        <p className='my-auto'>CSR</p>
+        <p className='my-auto'><Link href={"/services"}>Services</Link></p>
+        <p className='my-auto'> <Link href={'/csr'}>CSR</Link> </p>
         <p className='my-auto'>Projects</p>
         <p className='my-auto'>Contact us</p>
       </div>
