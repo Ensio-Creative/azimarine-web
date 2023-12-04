@@ -11,8 +11,8 @@ const Contact = () => {
           operations or solutions, get in touch and
           we’d respond to you as soon as we can.</p>
       </div>
-      <div className='flex mx-auto w-[60%] mb-10'>
-        <div className='p-16 bg-[#F9F9F9] text-[#5E5C84] rounded-xl'>
+      <div className='lg:flex mx-auto my-2 lg:w-[60%] mb-10'>
+        <div className='lg:p-16 p-10 bg-[#F9F9F9] text-[#5E5C84] rounded-xl'>
           <p className='font-bold text-xl text-blue'>Head Office</p>
           <p className=' text-[#5E5C84] my-2 text-sm'>
             54 Mobile Terminal Road,
@@ -23,9 +23,9 @@ const Contact = () => {
             +234 803 688 4384
             +234 803 752 8443
             <br /> <br />
-            nfo@azimarine.com</p>
+            info@azimarine.com</p>
         </div>
-        <div className='p-16 bg-[#F9F9F9] ml-2 rounded-xl'>
+        <div className='lg:p-16 p-10 bg-[#F9F9F9] my-2 lg:ml-2 rounded-xl'>
           <p className='font-bold text-xl text-blue'>Fabrication Yard</p>
 
           <p className=' text-[#5E5C84] my-2 text-sm'>

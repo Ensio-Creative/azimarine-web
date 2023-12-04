@@ -2,9 +2,9 @@ import React from 'react';
 
 const Contact = () => {
   return (
-    <section className='bg-[#F9F9F9] flex'>
-      <img className='h-96 w-1/2 object-fit' src="./images/get-in-touch.png" alt="" />
-      <div className='p-20 w-1/2 my-auto text-[#5E5C84]'>
+    <section className='bg-[#F9F9F9] lg:flex'>
+      <img className='lg:h-96 lg:w-1/2 object-fit' src="./images/get-in-touch.png" alt="" />
+      <div className='lg:p-20 p-10 lg:w-1/2 my-auto text-[#5E5C84]'>
         <p className='text-2xl mb-8'>Have question(s) concerning our
           services, operations, and solutions, we are here to answer your questions.
         </p>

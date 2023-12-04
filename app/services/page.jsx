@@ -124,11 +124,11 @@ const Services = () => {
   return (
     <FrontLayout>
       <HeroSection text={"Services"} img={"service"} />
-      <section className='mx-20 my-10'>
-        <h1 className='text-5xl font-bold text-blue'>What we do</h1>
+      <section className='lg:mx-20 mx-6 my-10'>
+        <h1 className='lg:text-5xl text-3xl font-bold text-blue'>What we do</h1>
         <div className="flex flex-wrap justify-between">
           {
-            services.map((single, index) => <div className='w-[49%] my-6'>
+            services.map((single, index) => <div className='lg:w-[49%] my-6'>
               <div className="relative">
                 <img src={'./images/services/' + single.img + '.png'} alt="" />
                 <img onClick={() => { setShow(true), setSingle(single) }} src="./images/arrow-right.svg" className="absolute cursor-pointer bottom-10 right-10 w-10" alt="" />
@@ -142,14 +142,14 @@ const Services = () => {
       </section>
       {show && <section>
         <div onClick={() => setShow(false)} className='bg-[#000000B2] w-full h-screen left-0 z-30 opacity-50 fixed top-0'></div>
-        <div className='z-40 h-[80vh] overflow-y-auto fixed top-20 bg-white left-32 right-32 p-6'>
-          <div className='flex relative'>
+        <div className='z-40 lg:h-[80vh] h-[90vh] overflow-y-auto fixed lg:top-20 top-10 bg-white lg:left-32 left-5 right-5 lg:right-32 p-6'>
+          <div className='lg:flex relative'>
             <img className='right-2 w-6 absolute cursor-pointer' onClick={() => setShow(false)} src="./images/close.svg" alt="" />
 
-            <div className='w-1/2'>
-              <img className='w-[37%] fixed h-[72vh] object-cover' src={'./images/services/' + single.img + '.png'} alt="" />
+            <div className='lg:w-1/2'>
+              <img className='lg:w-[37%] lg:fixed lg:h-[72vh] object-cover' src={'./images/services/' + single.img + '.png'} alt="" />
             </div>
-            <div className='w-1/2'>
+            <div className='lg:w-1/2'>
               <p className="text-blue text-lg font-bold my-3">{single.title}</p>
               {single.desc}
             </div>

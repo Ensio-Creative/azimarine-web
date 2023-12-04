@@ -73,8 +73,8 @@ const AboutPage = () => {
   return (
     <FrontLayout>
       <HeroSection img={"about"} text={"About us"} />
-      <section className='px-20 py-10'>
-        <h1 className='text-5xl text-blue font-bold'>Our Story & <br />
+      <section className='lg:px-20 px-6 py-10'>
+        <h1 className='lg:text-5xl text-3xl text-blue font-bold'>Our Story & <br />
           History</h1>
         <p className='my-6 text-[#5E5C84]'>
           Established in 1985 in the oil-rich region of the Southern Hemisphere of Nigeria, Azimarine is an entity duly incorporated under the laws of the Federal Republic of Nigeria. Our operational footprint extends across various oil assets and facilities nationwide. Over the years, our company has evolved into a premier indigenous firm, equipped with a blend of local and international expertise to address the ever-evolving demands and challenges of the industry.
@@ -88,9 +88,9 @@ const AboutPage = () => {
 
           These comprehensive standards underpin our unwavering commitment to ensuring the well-being and security of our workforce, the integrity of our operations, and the preservation of the environment. Our dedication to health, safety, and environmental stewardship is not just a priority but an integral part of our corporate ethos.
         </p>
-        <div className='flex '>
+        <div className='lg:flex '>
           <img src="./images/about-work.png" className='' alt="" />
-          <div className='p-16 bg-[#F9F9F9] text-[#5E5C84]'>
+          <div className='lg:p-16 p-4 bg-[#F9F9F9] text-[#5E5C84]'>
             <p>In the Oil & Gas sector, the primacy of health, safety, and environmental concerns cannot be overstated. It is for this very reason that Azimarine and General Services Limited has implemented a robust Occupational Health and Safety management system that aligns with the stringent requirements of industry standards, including:</p>
             <div className='border-l border-[#5E5C84] m-6 p-4'>
               <p>BS 8800:1996 - Guide to Occupational Health
@@ -103,10 +103,10 @@ const AboutPage = () => {
             </div>
           </div>
         </div>
-        <img src="./images/section.png" className='my-10' alt="" />
+        <img src="./images/section.png" className='mt-10' alt="" />
       </section>
 
-      <section className='px-20 py-10'>
+      <section className='lg:px-20 px-6 py-10'>
         <Collapse
           defaultActiveKey={['0']}
           ghost={true}
@@ -115,13 +115,13 @@ const AboutPage = () => {
         />
       </section>
 
-      <section className='px-20 py-10 bg-[#F9F9F9]'>
-        <h1 className='text-5xl font-bold text-blue'>How We Work</h1>
+      <section className='lg:px-20 px-6 py-10 bg-[#F9F9F9]'>
+        <h1 className='lg:text-5xl text-3xl font-bold text-blue'>How We Work</h1>
         <p className='text-blue'>AZIMAG - Success Factor</p>
         <div className='flex flex-wrap justify-between'>
           {
             work.map((single, index) =>
-              <div className='w-[33%] my-6'>
+              <div className='lg:w-[33%] w-[90%] my-6'>
                 <p className='my-4 text-blue'>0{index + 1}</p>
                 <div className='border-t border-t-blue'>
                   <h6 className='text-lg text-blue my-4'>{single.title}</h6>
