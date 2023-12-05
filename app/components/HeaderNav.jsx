@@ -17,7 +17,7 @@ const HeaderNav = () => {
 
   return (
     <header >
-      <div className='flex p-2 lg:px-20 px-6 justify-between'>
+      <div className='flex sm:fixed w-full z-50 bg-white p-2 lg:px-20 px-6 justify-between'>
         <Link href={"/"}>
           <img className='w-12' src="./images/azimarine-logo.png" alt="" />
         </Link>
@@ -28,9 +28,12 @@ const HeaderNav = () => {
           <p className='my-auto'><Link href={"/projects"}>Projects</Link> </p>
           <p className='my-auto'><Link href={"/contact"}>Contact us</Link></p>
         </div>
-        {/* <img onClick={() => openNav()} className='lg:hidden block w-6 burger' src="./images/icons8-hamburger.svg" alt="" /> */}
-        <p onClick={() => openNav()} >Menu</p>
 
+        <div onClick={() => openNav()} className='cursor-pointer flex lg:hidden '>
+          <p className='my-auto text-blue text-lg mr-2'>Menu</p>
+
+          <img className=' w-6 burger' src="./images/bar.svg" alt="" />
+        </div>
         <div id="mySidenav" className='sidenav'>
           <div className="w-[90%] mx-auto">
             <p onClick={() => closeNav()} className="float-right flex text-4xl cursor-pointer"> <p className='text-sm font-bold my-auto'>CLOSE MENU</p> &times;</p>

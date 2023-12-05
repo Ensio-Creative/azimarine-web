@@ -4,10 +4,55 @@ import Link from "next/link";
 import Contact from "./components/Contact";
 import SliderComp from "./components/SliderComp";
 import FrontLayout from "./layout/FrontLayout";
+import Slider from "react-slick";
 
 export default function Home() {
+  const settings = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: false
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1.1,
+          slidesToScroll: 1
+        }
+      }
+    ]
+  };
   return (
     <FrontLayout>
+      <link
+        rel="stylesheet"
+        type="text/css"
+        charSet="UTF-8"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+      />
+      <link
+        rel="stylesheet"
+        type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+      />
       <SliderComp />
       <section className="bg-[#F9F9F9] lg:flex">
         <img className="" src="./images/our-company.png" alt="" />
@@ -33,28 +78,30 @@ export default function Home() {
             </button>
           </Link>
         </div>
-        <div className="lg:flex justify-between my-10">
-          <div>
-            <div className="relative">
-              <img src="./images/service1.png" alt="" />
-              <img src="./images/arrow-right.svg" className="absolute bottom-10 right-10 w-10" alt="" />
+        <div className=" my-10">
+          <Slider {...settings}>
+            <div className="sm:px-4">
+              <div className="relative">
+                <img src="./images/service1.png" alt="" />
+                <img src="./images/arrow-right.svg" className="absolute bottom-10 right-10 w-10" alt="" />
+              </div>
+              <p className="text-blue my-3">Diving Services & Equipment</p>
             </div>
-            <p className="text-blue my-3">Diving Services & Equipment</p>
-          </div>
-          <div>
-            <div className="relative">
-              <img src="./images/service2.png" alt="" />
-              <img src="./images/arrow-right.svg" className="absolute bottom-10 right-10 w-10" alt="" />
+            <div className="sm:px-4">
+              <div className="relative">
+                <img src="./images/service2.png" alt="" />
+                <img src="./images/arrow-right.svg" className="absolute bottom-10 right-10 w-10" alt="" />
+              </div>
+              <p className="text-blue my-3">Design, Construction and Fabrication</p>
             </div>
-            <p className="text-blue my-3">Design, Construction and Fabrication</p>
-          </div>
-          <div>
-            <div className="relative">
-              <img src="./images/service3.png" alt="" />
-              <img src="./images/arrow-right.svg" className="absolute bottom-10 right-10 w-10" alt="" />
+            <div className="sm:px-4">
+              <div className="relative">
+                <img src="./images/service3.png" alt="" />
+                <img src="./images/arrow-right.svg" className="absolute bottom-10 right-10 w-10" alt="" />
+              </div>
+              <p className="text-blue my-3">Corrosion Control</p>
             </div>
-            <p className="text-blue my-3">Corrosion Control</p>
-          </div>
+          </Slider>
         </div>
       </section>
       <section className="lg:mx-20 mx-6 my-10">
