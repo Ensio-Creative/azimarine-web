@@ -59,22 +59,25 @@ const Services = () => {
         Azimarine stands at the forefront of Nigerian engineering, delivering comprehensive project and integrated maintenance solutions to the Oil and Gas Industry. As a versatile contractor, Azimarine boasts extensive expertise in executing specialized offshore project and maintenance services, encompassing:
         <br /> <br />
 
-        Offshore Services (Pipeline/Wellhead):<br />
-        Construction and maintenance of mechanical installations <br />
-        Pipeline survey and protection<br />
-        Intelligent pigging and pipeline flushing<br />
-        Inspection and replacement of cathodic protection systems underwater<br />
-        Trenching and backfilling<br />
-        Thermal insulation and intervention<br />
-        Pre-sweeping<br />
-        Sub-sea installation and intervention<br />
-        Seabed stabilization<br />
-        Wire-line services<br />
-        Wellhead removal using diamond wire cutting tools and a 230 HP ROV<br />
-        Tubular inspection and well leakage management<br />
-        Down-hole video camera system<br />
-        Infrastructural maintenance and repairs.<br />
-        <br /> <br />
+        <strong>Offshore Services (Pipeline/Wellhead):</strong> <br />
+        <ul className='ml-4 my-3'>
+          <li>Construction and maintenance of mechanical installations</li>
+          <li> Pipeline survey and protection</li>
+          <li>Intelligent pigging and pipeline flushing</li>
+          <li>Inspection and replacement of cathodic protection systems underwater</li>
+          <li>Trenching and backfilling</li>
+          <li> Thermal insulation and intervention</li>
+          <li> Pre-sweeping</li>
+          <li>Sub-sea installation and intervention</li>
+          <li>Seabed stabilization</li>
+          <li>Wire-line services</li>
+          <li>Wellhead removal using diamond wire cutting tools and a 230 HP ROV</li>
+          <li> Tubular inspection and well leakage management</li>
+          <li>Down-hole video camera system</li>
+          <li> Infrastructural maintenance and repairs.</li>
+        </ul>
+
+        {/* <br /> <br /> */}
 
         Azimarine's dedication to excellence in offshore services is a testament to its leading role in the industry, providing bespoke solutions to meet the unique demands of each project.
       </div>
@@ -109,12 +112,27 @@ const Services = () => {
         Our comprehensive array of services includes:
         <br /> <br />
 
-        Sourcing: We excel in identifying and sourcing the materials crucial to your operations. <br />
-        Critical Order Management & Information Updates: Azimarine is committed to keeping you informed with real-time order status updates, ensuring a seamless procurement process.<br />
-        Procurement: We handle all aspects of the procurement process, from initial requests to final acquisitions.<br />
-        Shipment, Freighting, and Insurance: Our services encompass managing the logistics of your materials, including secure shipping, freighting, and necessary insurance coverage.<br />
-        Warehousing: We maintain well-equipped warehousing facilities to ensure the safe storage of your materials.<br />
-        On-Site Deliveries: Azimarine streamlines the process by delivering materials directly to your project site, minimizing disruptions and delays.
+        <ul>
+          <li>
+            <strong>Sourcing:</strong> We excel in identifying and sourcing the materials crucial to your operations.
+          </li>
+          <li>
+            <strong>Critical Order Management & Information Updates:</strong> Azimarine is committed to keeping you informed with real-time order status updates, ensuring a seamless procurement process.
+          </li>
+          <li>
+            <strong>Procurement:</strong> We handle all aspects of the procurement process, from initial requests to final acquisitions.
+          </li>
+          <li>
+            <strong> Shipment, Freighting, and Insurance:</strong> Our services encompass managing the logistics of your materials, including secure shipping, freighting, and necessary insurance coverage.
+          </li>
+          <li>
+            <strong>Warehousing:</strong> We maintain well-equipped warehousing facilities to ensure the safe storage of your materials.
+          </li>
+          <li>
+            <strong>On-Site Deliveries:</strong>  Azimarine streamlines the process by delivering materials directly to your project site, minimizing disruptions and delays.
+          </li>
+        </ul>
+
         <br /> <br />
 
         With resident advisors stationed in both the UK and the USA, Azimarine's procurement capabilities are significantly bolstered. Our aim is to optimize your deliveries in the most cost-effective and efficient manner, reinforcing our reputation as a reliable partner for your material procurement needs.
@@ -124,33 +142,31 @@ const Services = () => {
   return (
     <FrontLayout>
       <HeroSection text={"Services"} img={"service"} />
-      <section className='lg:mx-20 mx-6 my-10'>
+      <section className='lg:mx-20 mx-6 lg:my-20 my-10'>
         <h1 className='lg:text-5xl text-3xl font-bold text-blue'>What we do</h1>
-        <div className="flex flex-wrap justify-between">
+        <div className="flex flex-wrap my-6 justify-between">
           {
-            services.map((single, index) => <div className='lg:w-[49%] my-6'>
+            services.map((single, index) => <div className='lg:w-[49%] lg:my-6 my-2'>
               <div className="relative">
-                <img src={'./images/services/' + single.img + '.png'} alt="" />
+                <img onClick={() => { setShow(true), setSingle(single) }} src={'./images/services/' + single.img + '.png'} alt="" />
                 <img onClick={() => { setShow(true), setSingle(single) }} src="./images/arrow-right.svg" className="absolute cursor-pointer bottom-10 right-10 w-10" alt="" />
               </div>
-              <p className="text-blue font-bold my-3">{single.title}</p>
-
-
+              <p onClick={() => { setShow(true), setSingle(single) }} className="text-blue text-left cursor-pointer text-xl font-bold my-6">{single.title}</p>
             </div>)
           }
         </div>
       </section>
       {show && <section>
-        <div onClick={() => setShow(false)} className='bg-[#000000B2] w-full h-screen left-0 z-30 opacity-50 fixed top-0'></div>
-        <div className='z-40 lg:h-[80vh] h-[90vh] overflow-y-auto fixed lg:top-20 top-10 bg-white lg:left-32 left-5 right-5 lg:right-32 p-6'>
+        <div onClick={() => setShow(false)} className='bg-[#000000B2] w-full h-screen left-0 z-30 opacity-100 fixed top-0'></div>
+        <div className='z-40 lg:h-[90vh] h-[90vh] overflow-y-auto fixed lg:top-10 top-10 bg-white lg:left-20 left-5 right-5 lg:right-20 p-6'>
           <div className='lg:flex relative'>
-            <img className='right-2 w-6 absolute cursor-pointer' onClick={() => setShow(false)} src="./images/close.svg" alt="" />
+            <img className='lg:right-28 right-10 w-10 h-10 fixed cursor-pointer' onClick={() => setShow(false)} src="./images/close.svg" alt="" />
 
             <div className='lg:w-1/2'>
-              <img className='lg:w-[37%] lg:fixed lg:h-[72vh] object-cover' src={'./images/services/' + single.img + '.png'} alt="" />
+              <img className='lg:w-[37%] lg:fixed lg:h-[82vh] h-[50vh] rounded-xl object-cover' src={'./images/services/' + single.img + '.png'} alt="" />
             </div>
-            <div className='lg:w-1/2'>
-              <p className="text-blue text-lg font-bold my-3">{single.title}</p>
+            <div className='lg:w-1/2 pb-10 mr-10'>
+              <p className="text-blue text-2xl font-bold lg:my-6 my-4">{single.title}</p>
               {single.desc}
             </div>
           </div>

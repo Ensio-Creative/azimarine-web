@@ -6,9 +6,9 @@ const CSR = () => {
   return (
     <FrontLayout>
       <HeroSection text={"CSR"} img={"csr-header"} />
-      <section className='lg:mx-44 mx-6 my-10'>
-        <h1 className='lg:text-5xl text-3xl font-bold text-blue'>Azimarine CSR</h1>
-        <p className='text-[#5E5C84] my-8'>Our commitment to corporate social responsibility (CSR) goes beyond mere words; it's ingrained in our very ethos.We adhere to the highest standards of corporate governance, ethics, and goodwill, understanding that our role transcends business. CSR is more than a concept; it's a tangible part of our business practices.
+      <section className='lg:mx-44 mx-6 lg:my-20 my-10'>
+        <h1 className='lg:text-5xl text-3xl font-bold text-blue'>Corperate Social <br /> Responsibility</h1>
+        <p className='text-[#5E5C84] my-8 text-left'>Our commitment to corporate social responsibility (CSR) goes beyond mere words; it's ingrained in our very ethos.We adhere to the highest standards of corporate governance, ethics, and goodwill, understanding that our role transcends business. CSR is more than a concept; it's a tangible part of our business practices.
           <br /> <br />
           We channel this commitment into creating value-added products and services that not only benefit our clients but also contribute to the betterment of our communities. Our aim is to foster sustainable social investments that empower local communities. This approach is not just about being good corporate citizens; it's about making a meaningful impact.
           <br /> <br />
@@ -24,11 +24,11 @@ const CSR = () => {
 
           In essence, our commitment to CSR is not just a statement; it's a lived reality. We stand committed to creating a better world, one that thrives on shared values, collective growth, and a sustainable future.</p>
       </section>
-      <div className='lg:mx-20 mx-6 my-10'>
-        <img src="./images/one.png" alt="" />
-        <div className='lg:flex sm:hidden mt-2'>
-          <img src="./images/two.png" alt="" />
-          <img src="./images/three.png" className='lg:ml-2' alt="" />
+      <div className='lg:mx-20 mx-6 mt-10 lg:mb-20 mb-12'>
+        <img className='sm:h-44 object-cover w-full rounded-lg' src="./images/one.png" alt="" />
+        <div className='flex mt-2'>
+          <img className='sm:w-1/2 sm:h-44 object-cover rounded-lg' src="./images/two.png" alt="" />
+          <img src="./images/three.png" className='ml-2 sm:w-1/2 sm:h-44 object-cover rounded-lg' alt="" />
         </div>
       </div>
     </FrontLayout>

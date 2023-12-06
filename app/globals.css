@@ -9,6 +9,10 @@ body {
   font-family: 'Space Grotesk', sans-serif;
 }
 
+ul li {
+  list-style: disc;
+}
+
 .sidenav {
   height: 100%;
   /* 100% Full-height */

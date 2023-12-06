@@ -30,9 +30,9 @@ const SliderComp = () => {
           <img onClick={handleClick} src="./images/arrow-down.svg" className='w-12 mx-auto cursor-pointer' alt="" />
         </div>
       </div>
-      <div ref={ref}>
-        <h1 className='lg:text-7xl text-4xl font-bold text-blue p-10 lg:ml-32'>
-          We are committed to providing services and solutions that meet the growing demand across different sectors where we operate.
+      <div ref={ref} className='lg:py-20 py-10'>
+        <h1 className='lg:text-7xl text-4xl text-blue p-10 lg:ml-32'>
+          We are committed to providing services and solutions that meet the growing demand across different sectors where <br /> we operate.
         </h1>
       </div>
     </section>
