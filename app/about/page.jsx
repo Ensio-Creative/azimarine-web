@@ -6,7 +6,7 @@ import { Collapse } from 'antd';
 const items = (panelStyle) => [
   {
     key: '1',
-    label: <p className='lg:text-2xl text-left text-base py-4 font-bold text-blue'>Corporate Pledge of Commitment & Competence</p>,
+    label: <p className='lg:text-2xl text-left text-base font-bold text-blue'>Corporate Pledge of Commitment & Competence</p>,
     children: <div className='text-[#5E5C84] text-lg mb-6'>
       We firmly believe that, through the utilization of our extensive human resources, wealth of experience, skilled workforce, and diverse skillsets, we have the capacity to deliver sustainable and standardized solutions on a per project basis. The sesolutions  arecharacterized  bytheir reliability, trustworthiness, flexibility, and cost-efficiency, meeting and often exceeding the needs and expectations of all our valued clients."
       <br /><br />
@@ -18,7 +18,7 @@ const items = (panelStyle) => [
   },
   {
     key: '2',
-    label: <p className='lg:text-2xl text-left text-base py-4 font-bold text-blue'>Management Team</p>,
+    label: <p className='lg:text-2xl text-left text-base font-bold text-blue'>Management Team</p>,
     children: <div className='text-[#5E5C84] text-lg mb-6'>
       "In the dynamic realm of oil and gas exploration, our company is guided by a distinguished management team,which collectively boasts an impressive industry experience of over 100 years.Each member of our management team is not only seasoned in their respective roles but also deeply committed to elevating our operational and administrative efficiency.
       <br /> <br />
@@ -110,6 +110,7 @@ const AboutPage = () => {
         <Collapse
           defaultActiveKey={['0']}
           ghost={true}
+          size={"large"}
           expandIconPosition={"end"}
           items={items((panelStyle))}
         />
@@ -121,7 +122,7 @@ const AboutPage = () => {
         <div className='flex lg:mt-10 mt-6 flex-wrap justify-between'>
           {
             work.map((single, index) =>
-              <div className='lg:w-[32%] bg-white p-8 w-[98%] my-3'>
+              <div key={index} className='lg:w-[32%] bg-white p-8 w-[98%] my-3'>
                 <p className='my-4 font-bold text-2xl text-blue'>0{index + 1}</p>
                 <div className='border-t border-t-blue'>
                   <h6 className='text-lg font-bold text-blue my-4'>{single.title}</h6>

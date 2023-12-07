@@ -148,7 +148,7 @@ const Services = () => {
           {
             services.map((single, index) => <div className='lg:w-[49%] lg:my-6 my-2'>
               <div className="relative">
-                <img onClick={() => { setShow(true), setSingle(single) }} src={'./images/services/' + single.img + '.png'} alt="" />
+                <img className='cursor-pointer' onClick={() => { setShow(true), setSingle(single) }} src={'./images/services/' + single.img + '.png'} alt="" />
                 <img onClick={() => { setShow(true), setSingle(single) }} src="./images/arrow-right.svg" className="absolute cursor-pointer bottom-10 right-10 w-10" alt="" />
               </div>
               <p onClick={() => { setShow(true), setSingle(single) }} className="text-blue text-left cursor-pointer text-xl font-bold my-6">{single.title}</p>
