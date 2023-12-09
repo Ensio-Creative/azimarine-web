@@ -11,22 +11,22 @@ const FooterNav = () => {
         <div className='w-10'>
         </div>
       </Marquee>
-     <section className='lg:mx-20 mx-6 my-10'>
-      <div className='lg:flex border-y py-6 justify-between border-white'>
-        <p className='lg:text-lg text-sm text-white sm:mb-4'>Connect with us, we are social</p>
-        <div className='flex justify-between w-44'>
-          <img src="./images/icons/Vector.svg" className='w-6' alt="" />
-          <img src="./images/icons/Vector-1.svg" className='w-6' alt="" />
-          <img src="./images/icons/Instagram.svg" className='w-6' alt="" />
-          <img src="./images/icons/Vector-2.svg" className='w-6' alt="" />
-          <img src="./images/icons/YouTube.svg" className='w-6' alt="" />
+      <section className='lg:mx-20 mx-6 my-10'>
+        <div className='lg:flex border-y py-6 justify-between border-[#F1C405]'>
+          <p className='lg:text-lg text-sm text-white sm:mb-4'>Connect with us, we are social</p>
+          <div className='flex justify-between w-44'>
+            <img src="./images/icons/Group-29.svg" className='w-8' alt="" />
+            <img src="./images/icons/Group-28.svg" className='w-8' alt="" />
+            <img src="./images/icons/Group-27.svg" className='w-8' alt="" />
+            <img src="./images/icons/Group-26.svg" className='w-8' alt="" />
+            <img src="./images/icons/Group-25.svg" className='w-8' alt="" />
+          </div>
         </div>
-      </div>
-      <div className='lg:flex text-xs py-6 justify-between text-white'>
-        <p>© 2023 Azimarine & General Services Limited</p>
-        <p>Made by <a href="http://ensiocreative.com/" target='_blank'>Ensio Creative</a></p>
-      </div>
-     </section>
+        <div className='lg:flex text-xs py-6 justify-between text-white'>
+          <p>© 2023 Azimarine & General Services Limited</p>
+          <p>Made by <a href="http://ensiocreative.com/" target='_blank'>Ensio Creative</a></p>
+        </div>
+      </section>
     </footer>
   );
 };

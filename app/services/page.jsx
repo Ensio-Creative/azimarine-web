@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import FrontLayout from '../layout/FrontLayout';
 import HeroSection from '../components/HeroSection';
+import Contact from '../components/Contact';
 
 const Services = () => {
   const [show, setShow] = useState(false)
@@ -172,6 +173,7 @@ const Services = () => {
           </div>
         </div>
       </section>}
+      <Contact />
     </FrontLayout>
   );
 };

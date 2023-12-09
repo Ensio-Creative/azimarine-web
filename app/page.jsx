@@ -98,16 +98,16 @@ export default function Home() {
         href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
       />
       <SliderComp />
-      <section className="bg-[#F9F9F9] lg:flex">
+      <section className="bg-[#F8F6FE] lg:flex">
         <img className="" src="./images/our-company.png" alt="" />
         <div className="lg:p-16 p-6 lg:my-auto my-4">
           <h2 className="lg:text-5xl text-3xl font-bold text-blue">Our
             Company</h2>
           <p className="text-[#5E5C84] lg:my-8 my-4 lg:text-lg text-left">Azimarine's summit is straight forward: We want to be your company of choice for an extensive range of oilfield products, services and logistic support that will help your company to be more efficiently and profitably across different sectors where we operate.</p>
           <Link href={"/about"}>
-            <button className="flex justify-between py-1 w-32 sm:mb-6 border rounded-full px-2 border-[#220E5B]">
-              <p className="text-sm text-blue my-auto">Learn More</p>
+            <button className="flex justify-between py-1 w-32 sm:mb-6 rounded-full px-2">
               <img className="w-6" src="./images/arrow-right.svg" alt="" />
+              <p className="text-sm text-blue my-auto">Learn More</p>
             </button>
           </Link>
         </div>
@@ -116,9 +116,9 @@ export default function Home() {
         <div className="flex justify-between">
           <h1 className="lg:text-5xl text-3xl font-bold text-blue">Services</h1>
           <Link href={"/services"}>
-            <button className="flex my-auto justify-between py-1 w-32 border rounded-full px-2 border-[#220E5B]">
-              <p className="text-sm text-blue my-auto">View All</p>
+            <button className="flex my-auto justify-between py-1 w-28 rounded-full px-2">
               <img className="w-6" src="./images/arrow-right.svg" alt="" />
+              <p className="text-sm text-blue my-auto">View All</p>
             </button>
           </Link>
         </div>
@@ -168,7 +168,7 @@ export default function Home() {
           from our MD</h1>
         <div className="lg:flex my-10">
           <img src="./images/md.png" alt="" />
-          <div className="bg-[#F9F9F9] rounded-3xl lg:ml-4 lg:p-12 p-4">
+          <div className="bg-[#F8F6FE] rounded-3xl lg:ml-4 lg:p-12 p-4">
             <p className="text-blue sm:mt-6 text-sm">ENGR. MICHAEL ABAKAM</p>
             <p className="text-blue">Managing Director, Azimarine</p>
             <p className="my-8 lg:text-lg text-left text-[#5E5C84]">

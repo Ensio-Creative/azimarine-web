@@ -21,7 +21,7 @@ const Projects = () => {
       <section className='bg-blue text-center'>
         <div className='lg:w-1/2 mx-auto text-white lg:p-20 p-10'>
           <p className='text-sm mb-4 text-center'>COMPLETED JOB PORTFOLIO</p>
-          <h6 className='lg:text-xl text-base font-bold'>Drawing from our flawless project portfolio delivery, we take pride in showcasing some of our successfully completed projects, each a testament to our commitment to excellence and client satisfaction. Our expertise and
+          <h6 className='lg:text-xl text-base'>Drawing from our flawless project portfolio delivery, we take pride in showcasing some of our successfully completed projects, each a testament to our commitment to excellence and client satisfaction. Our expertise and
             dedication shine through in every endeavor we undertake.</h6>
         </div>
       </section>
