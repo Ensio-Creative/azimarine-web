@@ -5,6 +5,16 @@ import React, { useEffect, useState } from 'react';
 
 const HeaderNav = () => {
   const [open, setOpen] = useState(false)
+  const [pos, setPos] = useState(window.scrollY)
+
+  useEffect(() => {
+    interval
+  }, [])
+
+  const interval = setInterval(function () {
+    setPos(window.scrollY)
+    // console.log(pos)
+  }, 1000);
 
   const openNav = () => {
     document.getElementById("mySidenav").style.width = "100%";
@@ -17,11 +27,12 @@ const HeaderNav = () => {
 
   return (
     <header >
-      <div className='flex w-full z-50 bg-white p-4 lg:px-20 px-6 justify-between'>
+      <div className={pos > 500 ? 'flex fixed left-0 right-0 w-full lg:px-20 z-50 bg-white text-blue p-4 mx-auto mx-6 justify-between' :
+        'flex fixed left-0 right-0 lg:w-[88%] z-50 lg:bg-transparent sm:bg-white border-b border-[#FFFFFF66] text-white p-4 mx-auto mx-6 justify-between'}>
         <Link href={"/"}>
           <img className='w-16' src="./images/azimarine-logo.png" alt="" />
         </Link>
-        <div className='w-[40%] sm:hidden flex justify-between text-blue text-sm font-bold'>
+        <div className='w-[40%] sm:hidden flex justify-between text-sm'>
           <p className='my-auto'><Link href={"/about"}> About us</Link></p>
           <p className='my-auto'><Link href={"/services"}>Services</Link></p>
           <p className='my-auto'> <Link href={'/csr'}>CSR</Link> </p>
@@ -31,7 +42,6 @@ const HeaderNav = () => {
 
         <div onClick={() => openNav()} className='cursor-pointer flex lg:hidden '>
           <p className='my-auto text-blue font-bold text-lg mr-2'>MENU</p>
-
           <img className=' w-6 burger' src="./images/bar.svg" alt="" />
         </div>
         <div id="mySidenav" className='sidenav'>

@@ -99,7 +99,7 @@ const AboutPage = () => {
         </p>
       </section>
       <img src="./images/about-img-1.png" alt="" />
-      <section className='bg-[#F8F6FE] flex'>
+      <section className='bg-[#F8F6FE] lg:flex'>
         <div className='lg:px-20 p-7 my-auto lg:w-[60%]'>
           <h1 className='lg:text-4xl text-3xl mb-4 text-blue font-bold'>Corporate Pledge of  <br />
             Commitment & Competence</h1>
@@ -112,17 +112,17 @@ const AboutPage = () => {
         </div>
         <img className='lg:w-[40%] h-[100vh]' src="./images/abut-img.png" alt="" />
       </section>
-      <section className='p-20'>
+      <section className='lg:p-20 p-6'>
         <h1 className='lg:text-5xl text-3xl font-bold text-blue'>Meet the <br /> Management Team</h1>
 
       </section>
 
-      <section className='lg:px-20 px-6 flex lg:py-20 py-10 lg:mt-20 mt-10 bg-[#F9F9F9]'>
-        <div className='w-[30%]'>
+      <section className='lg:px-20 px-6 lg:flex lg:py-20 py-10 lg:mt-20 mt-10 bg-[#F9F9F9]'>
+        <div className='lg:w-[30%]'>
           <h1 className='lg:text-5xl text-3xl font-bold text-blue'>How We Work</h1>
           <p className='text-blue'>AZIMAG - Success Factor</p>
         </div>
-        <div className='flex w-[70%] lg:mt-10 mt-6 flex-wrap justify-between'>
+        <div className='flex lg:w-[70%] lg:mt-10 mt-6 flex-wrap justify-between'>
           {
             work.map((single, index) =>
               <div key={index} className='lg:w-[49%] bg-white p-8 w-[98%] my-2'>
