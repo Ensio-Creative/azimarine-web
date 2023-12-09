@@ -5,7 +5,7 @@ import React, { useEffect, useState } from 'react';
 
 const HeaderNav = () => {
   const [open, setOpen] = useState(false)
-  const [pos, setPos] = useState(window.scrollY)
+  const [pos, setPos] = useState(0)
 
   useEffect(() => {
     interval
