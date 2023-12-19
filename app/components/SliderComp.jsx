@@ -9,20 +9,20 @@ const SliderComp = () => {
   return (
     <section>
       <div className='relative'>
-        <div className='absolute z-10 top-0 bg-[#000000] h-[95vh] w-full opacity-70'></div>
-        <Carousel autoplay effect="fade" dots={false}>
+        <div className='absolute z-10 top-0 bg-[#000000] h-[100vh] w-full opacity-70'></div>
+        <Carousel autoplay autoplaySpeed={5000} effect="fade" dots={false}>
           <div>
-            <img className='h-[95vh] w-full sm:object-cover' src="./images/hero-1.png" alt="" />
+            <img className='h-[100vh] w-full sm:object-cover' src="./images/hero-1.png" alt="" />
           </div>
           <div>
-            <img className='h-[95vh] w-full sm:object-cover' src="./images/hero-2.png" alt="" />
+            <img className='h-[100vh] w-full sm:object-cover' src="./images/hero-2.png" alt="" />
           </div>
           <div>
-            <img className='h-[95vh] w-full sm:object-cover' src="./images/hero-3.png" alt="" />
+            <img className='h-[100vh] w-full sm:object-cover' src="./images/hero-3.png" alt="" />
           </div>
         </Carousel>
         <div className='absolute lg:left-20 left-10 top-52 z-20 lg:w-[60%] w-[80%]'>
-          <h1 className='lg:text-6xl text-5xl text-white font-bold '> An indigenous
+          <h1 className='lg:text-7xl text-5xl text-white font-bold '> An indigenous
             company driven by experience, quality
             and innovation.</h1>
         </div>

@@ -24,7 +24,7 @@ const FooterNav = () => {
         </div>
         <div className='lg:flex text-xs py-6 justify-between text-white'>
           <p>© 2023 Azimarine & General Services Limited</p>
-          <p>Made by <a href="http://ensiocreative.com/" target='_blank'>Ensio Creative</a></p>
+          <p className='sm:my-1'>Made by <a href="http://ensiocreative.com/" target='_blank'>Ensio Creative</a></p>
         </div>
       </section>
     </footer>

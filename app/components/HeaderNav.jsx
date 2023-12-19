@@ -7,6 +7,7 @@ const HeaderNav = () => {
   const [open, setOpen] = useState(false)
   const [pos, setPos] = useState(0)
 
+  
   useEffect(() => {
     interval
   }, [])
@@ -47,11 +48,11 @@ const HeaderNav = () => {
         <div id="mySidenav" className='sidenav'>
           <div className="w-[90%] mx-auto">
             <div onClick={() => closeNav()} className="float-right flex text-4xl cursor-pointer"> <p className='text-xl font-black my-auto mr-3'>CLOSE MENU</p> <img className='w-4' src="./images/close-bar.svg" alt="" /></div>
-            <p className='my-auto pt-32 font-bold  border-b border-blue pb-3 text-3xl'><Link href={"/about"}> About us</Link></p>
-            <p className='my-auto text-3xl font-bold  border-b border-blue py-3'><Link href={"/services"}>Services</Link></p>
-            <p className='my-auto text-3xl font-bold  border-b border-blue py-3'> <Link href={'/csr'}>CSR</Link> </p>
-            <p className='my-auto text-3xl font-bold  border-b border-blue py-3'><Link href={"/projects"}>Projects</Link> </p>
-            <p className='my-auto text-3xl font-bold  border-b border-blue py-3'><Link href={"/contact"}>Contact us</Link></p>
+            <p className='my-auto pt-32 font-bold  border-b border-blue pb-3 text-5xl'><Link href={"/about"}> About us</Link></p>
+            <p className='my-auto text-5xl font-bold  border-b border-blue py-3'><Link href={"/services"}>Services</Link></p>
+            <p className='my-auto text-5xl font-bold  border-b border-blue py-3'> <Link href={'/csr'}>CSR</Link> </p>
+            <p className='my-auto text-5xl font-bold  border-b border-blue py-3'><Link href={"/projects"}>Projects</Link> </p>
+            <p className='my-auto text-5xl font-bold  border-b border-blue py-3'><Link href={"/contact"}>Contact us</Link></p>
 
             <div className='flex mt-20 w-[80%] justify-between'>
               <img src="./images/icons/Group-29.svg" className='w-10' alt="" />

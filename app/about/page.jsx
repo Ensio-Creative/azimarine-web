@@ -98,12 +98,12 @@ const AboutPage = () => {
           These comprehensive standards underpin our unwavering commitment to ensuring the well-being and security of our workforce, the integrity of our operations, and the preservation of the environment. Our dedication to health, safety, and environmental stewardship is not just a priority but an integral part of our corporate ethos.
         </p>
       </section>
-      <img src="./images/about-img-1.png" alt="" />
+      <img src="./images/about-img-1.png" className='sm:h-80 object-cover' alt="" />
       <section className='bg-[#F8F6FE] lg:flex'>
-        <div className='lg:px-20 p-7 my-auto lg:w-[60%]'>
+        <div className='lg:px-20  p-7 my-auto lg:w-[60%]'>
           <h1 className='lg:text-4xl text-3xl mb-4 text-blue font-bold'>Corporate Pledge of  <br />
             Commitment & Competence</h1>
-          <p className='text-blue'>We firmly believe that, through the utilization of our extensive human resources, wealth of experience, skilled workforce, and diverse skill sets, we have the capacity to deliver sustainable and standardized solutions on a per project basis. These solutions are characterized by their reliability, trustworthiness, flexibility, and cost-efficiency, meeting and often exceeding the needs and expectations of all our valued clients."
+          <p className='text-blue text-left'>We firmly believe that, through the utilization of our extensive human resources, wealth of experience, skilled workforce, and diverse skill sets, we have the capacity to deliver sustainable and standardized solutions on a per project basis. These solutions are characterized by their reliability, trustworthiness, flexibility, and cost-efficiency, meeting and often exceeding the needs and expectations of all our valued clients."
             <br /> <br />
             "Our mission is to assist organizations in achieving their corporate objectives by delivering exceptional customer experiences, maintaining quality safety standards, optimizing operational efficiency, ensuring compliance, and promoting sustainability. We achieve this by harnessing the potential of new technology, competent human resources, and constant innovation."
             <br /> <br />
@@ -113,16 +113,73 @@ const AboutPage = () => {
         <img className='lg:w-[40%] h-[100vh]' src="./images/abut-img.png" alt="" />
       </section>
       <section className='lg:p-20 p-6'>
-        <h1 className='lg:text-5xl text-3xl font-bold text-blue'>Meet the <br /> Management Team</h1>
-
+        <h1 className='lg:text-5xl text-3xl sm:mt-6 font-bold text-blue'>Meet the <br /> Management Team</h1>
+        <div className='flex flex-wrap mt-4 justify-between'>
+        <div className='bg-[#E8E9EB] lg:w-[32%] my-3 rounded-xl'>
+            <img src="/images/team/micheal-abakam.png" alt="" />
+            <div className='p-6'>
+              <p className='font-bold text-xl text-[#220E5B] '>Engr. Michael Abakam</p>
+              <p className='text-sm text-[#220E5B]'>Managing Director</p>
+            </div>
+          </div>
+          <div className='bg-[#E8E9EB] lg:w-[32%] my-3 rounded-xl'>
+            <img src="/images/team/isokobo-abakam.png" alt="" />
+            <div className='p-6'>
+              <p className='font-bold text-xl text-[#220E5B] '>Joachim Osajie</p>
+              <p className='text-sm text-[#220E5B]'>Head of Operations</p>
+            </div>
+          </div>
+          <div className='bg-[#E8E9EB] lg:w-[32%] my-3 rounded-xl'>
+            <img src="/images/team/isokobo-abakam.png" alt="" />
+            <div className='p-6'>
+              <p className='font-bold text-xl text-[#220E5B] '>Isokobo Abakam</p>
+              <p className='text-sm text-[#220E5B]'>Business Development</p>
+            </div>
+          </div>
+          <div className='bg-[#E8E9EB] lg:w-[32%] my-3 rounded-xl'>
+            <img src="/images/team/isokobo-abakam.png" alt="" />
+            <div className='p-6'>
+              <p className='font-bold text-xl text-[#220E5B] '>Jeuel Lukeson</p>
+              <p className='text-sm text-[#220E5B]'>Contract Administrator</p>
+            </div>
+          </div>
+          <div className='bg-[#E8E9EB] lg:w-[32%] my-3 rounded-xl'>
+            <img src="/images/team/isokobo-abakam.png" alt="" />
+            <div className='p-6'>
+              <p className='font-bold text-xl text-[#220E5B] '>Udeme Sandy</p>
+              <p className='text-sm text-[#220E5B]'>Operation Manager</p>
+            </div>
+          </div>
+          <div className='bg-[#E8E9EB] lg:w-[32%] my-3 rounded-xl'>
+            <img src="/images/team/isokobo-abakam.png" alt="" />
+            <div className='p-6'>
+              <p className='font-bold text-xl text-[#220E5B] '>Engr. Salvation Woke</p>
+              <p className='text-sm text-[#220E5B]'>Projects Manager</p>
+            </div>
+          </div>
+          <div className='bg-[#E8E9EB] lg:w-[32%] my-3 rounded-xl'>
+            <img src="/images/team/isokobo-abakam.png" alt="" />
+            <div className='p-6'>
+              <p className='font-bold text-xl text-[#220E5B] '>Bar. Ubongabasi Udoh</p>
+              <p className='text-sm text-[#220E5B]'>Secretary</p>
+            </div>
+          </div>
+          <div className='bg-[#E8E9EB] lg:w-[32%] my-3 rounded-xl'>
+            <img src="/images/team/isokobo-abakam.png" alt="" />
+            <div className='p-6'>
+              <p className='font-bold text-xl text-[#220E5B] '>Capt. Ovat Peter</p>
+              <p className='text-sm text-[#220E5B]'>Human Resources Manager</p>
+            </div>
+          </div>
+        </div>
       </section>
 
-      <section className='lg:px-20 px-6 lg:flex lg:py-20 py-10 lg:mt-20 mt-10 bg-[#F9F9F9]'>
+      <section className='lg:px-20 px-6 lg:flex lg:py-20 py-10  bg-[#F9F9F9]'>
         <div className='lg:w-[30%]'>
           <h1 className='lg:text-5xl text-3xl font-bold text-blue'>How We Work</h1>
           <p className='text-blue'>AZIMAG - Success Factor</p>
         </div>
-        <div className='flex lg:w-[70%] lg:mt-10 mt-6 flex-wrap justify-between'>
+        <div className='flex lg:w-[70%] sm:mt-4 flex-wrap justify-between'>
           {
             work.map((single, index) =>
               <div key={index} className='lg:w-[49%] bg-white p-8 w-[98%] my-2'>

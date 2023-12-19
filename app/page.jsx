@@ -78,7 +78,7 @@ export default function Home() {
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 1.1,
+          slidesToShow: 1.1 ,
           slidesToScroll: 1
         }
       }
@@ -106,23 +106,24 @@ export default function Home() {
           <p className="text-[#5E5C84] lg:my-8 my-4 lg:text-lg text-left">Azimarine's summit is straight forward: We want to be your company of choice for an extensive range of oilfield products, services and logistic support that will help your company to be more efficiently and profitably across different sectors where we operate.</p>
           <Link href={"/about"}>
             <button className="flex justify-between py-1 w-32 sm:mb-6 rounded-full px-2">
+              <p className="text-sm text-blue font-bold my-auto">Learn More</p>
               <img className="w-6" src="./images/arrow-right.svg" alt="" />
-              <p className="text-sm text-blue my-auto">Learn More</p>
+
             </button>
           </Link>
         </div>
       </section>
-      <section className="lg:mx-20 mx-6 lg:my-20 my-10 lg:pb-10 border-b border-b-blue">
-        <div className="flex justify-between">
+      <section className="lg:mx-20 lg:my-20 my-10 lg:pb-10 border-b border-b-blue">
+        <div className="flex justify-between sm:mx-6">
           <h1 className="lg:text-5xl text-3xl font-bold text-blue">Services</h1>
           <Link href={"/services"}>
-            <button className="flex my-auto justify-between py-1 w-28 rounded-full px-2">
+            <button className="flex my-auto justify-between py-1 lg:w-28 rounded-full px-2">
+              <p className="text-sm text-blue sm:mr-2 my-auto font-bold">View All</p>
               <img className="w-6" src="./images/arrow-right.svg" alt="" />
-              <p className="text-sm text-blue my-auto">View All</p>
             </button>
           </Link>
         </div>
-        <div className=" my-10">
+        <div className="my-10">
           <Slider {...settings}>
             {
               services.map((single, index) => <div className="sm:px-4">
@@ -164,30 +165,34 @@ export default function Home() {
         </div>
       </section>
       <section className="lg:mx-20 mx-6 my-10">
-        <h1 className="lg:text-5xl text-3xl font-bold text-blue">Statement <br />
-          from our MD</h1>
+        <h1 className="lg:text-5xl text-3xl font-bold text-blue">Managing Director <br />
+          Statement</h1>
         <div className="lg:flex my-10">
           <img src="./images/md.png" alt="" />
           <div className="bg-[#F8F6FE] rounded-3xl lg:ml-4 lg:p-12 p-4">
-            <p className="text-blue sm:mt-6 text-sm">ENGR. MICHAEL ABAKAM</p>
+            <p className="text-blue sm:mt-6 text-base">ENGR. MICHAEL ABAKAM</p>
             <p className="text-blue">Managing Director, Azimarine</p>
             <p className="my-8 lg:text-lg text-left text-[#5E5C84]">
-              Dr Awele V. Elumelu oversees the healthcare investments in the Heirs Holdings' portfolio. She holds a Bachelor of Medicine, Bachelor of Surgery degree from the University of Benin. Her experience as a medical doctor includes general medical practice and emergency medicine. In Nigeria, Dr Elumelu has worked with the Lagos University Teaching Hospital and in the UK, with Grantham and District Hospital, Grantham. In November 2020, she was appointed to the Yale Institute for Global Health Advisory Board. In January 2018, Dr Elumelu was appointed as the Champion for immunisation in Africa by the Global Alliance for Vaccines and Immunisation (GAVI).</p>
+              Azimarine and General Services Limited aims to provide defect free services to her customers in oil and gas and  construction sectors. We are committed to excellence and are only satisfied when a project has been delivered efficiently without compromising on budget, timeline, process, standards, quality, and safety.
+              <br /> <br />
+              The company has been evolving and growing steadily, all thanks to our excellent team that gives great attention to details in all our operations and our customers who strongly believe in us and who have worked very closely to reach our common goals.
+              <br /> <br />
+              We will continue to focus on shared value while investing in our future success, you can count on us.</p>
           </div>
         </div>
       </section>
       <Contact />
       {show && <section>
-        <div onClick={() => setShow(false)} className='bg-[#000000B2] w-full h-screen left-0 z-30 opacity-100 fixed top-0'></div>
-        <div className='z-40 lg:h-[90vh] h-[90vh] overflow-y-auto fixed lg:top-10 top-10 bg-white lg:left-20 left-5 right-5 lg:right-20 p-6'>
-          <div className='lg:flex relative'>
-            <img className='lg:right-28 right-10 w-10 h-10 fixed cursor-pointer' onClick={() => setShow(false)} src="./images/close.svg" alt="" />
+        <div onClick={() => setShow(false)} className='bg-[#000000B2] w-full h-screen left-0 z-50 opacity-100 fixed top-0'></div>
+        <div className=' lg:h-[100vh] h-[100vh] z-50 fixed top-0 overflow-y-auto bg-white left-0 right-0 p-6'>
+          <div className='lg:flex lg:mx-20 my-10 relative'>
+            <img className='lg:right-22 right-10 w-12 h-12 fixed cursor-pointer' onClick={() => setShow(false)} src="./images/close.svg" alt="" />
 
             <div className='lg:w-1/2'>
               <img className='lg:w-[37%] lg:fixed lg:h-[82vh] h-[50vh] rounded-xl object-cover' src={'./images/services/' + single.img + '.png'} alt="" />
             </div>
-            <div className='lg:w-1/2 pb-10 mr-10'>
-              <p className="text-blue text-2xl font-bold lg:my-6 my-4">{single.title}</p>
+            <div className='lg:w-1/2 lg:pr-2 pb-10 lg:h-[82vh] overflow-y-auto'>
+              <p className="text-blue text-4xl text-left   font-bold lg:my-6 my-4">{single.title}</p>
               {single.desc}
             </div>
           </div>

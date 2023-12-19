@@ -5,7 +5,7 @@ import HeroSection from '../components/HeroSection';
 const Contact = () => {
   return (
     <FrontLayout>
-      <HeroSection text={"Say hello to us"} img={"contact-us"} />
+      <HeroSection text={"Talk to us"} img={"contact-us"} />
       {/* <div className='w-80 text-[#5E5C84] text-lg lg:py-12 py-10 mx-auto'>
         <p className='text-center'>For further enquiries on our services,
           operations or solutions, get in touch and

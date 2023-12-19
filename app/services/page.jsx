@@ -45,7 +45,7 @@ const Services = () => {
         <br /> <br />
         rom surface area preparation to pipeline coating within the oil and gas sector, we stand as your foremost indigenous contractors and project partners, offering industry-standard corrosion management solutions tailored to address the comprehensive range of topside, sub-surface, and subsea infrastructure needs stemming from corrosion-related challenges.
         <br />
-        <p className='text-[#FE0000]'> FUNFACT: THE ANNUAL COST OF CORROSION TO THE OIL AND GAS INDSTRY GLOBALLY ACCORDING TO NACE INTERNATIONAL IS $60 BILLION USD.</p>
+        <p className='text-[#FE0000] mt-3'> FUNFACT: THE ANNUAL COST OF CORROSION TO THE OIL AND GAS INDSTRY GLOBALLY ACCORDING TO NACE INTERNATIONAL IS $60 BILLION USD.</p>
       </div>
     },
     {
@@ -150,24 +150,24 @@ const Services = () => {
             services.map((single, index) => <div className='lg:w-[49%] lg:my-6 my-2'>
               <div className="relative">
                 <img className='cursor-pointer' onClick={() => { setShow(true), setSingle(single) }} src={'./images/services/' + single.img + '.png'} alt="" />
-                <img onClick={() => { setShow(true), setSingle(single) }} src="./images/arrow-right.svg" className="absolute cursor-pointer bottom-10 right-10 w-10" alt="" />
+                <img onClick={() => { setShow(true), setSingle(single) }} src="./images/arrow-right.svg" className="absolute cursor-pointer lg:bottom-10 lg:right-10 right-4 bottom-4  w-10" alt="" />
               </div>
-              <p onClick={() => { setShow(true), setSingle(single) }} className="text-blue text-left cursor-pointer text-xl font-bold my-6">{single.title}</p>
+              <p onClick={() => { setShow(true), setSingle(single) }} className="text-blue text-left cursor-pointer text-2xl font-bold my-6">{single.title}</p>
             </div>)
           }
         </div>
       </section>
       {show && <section>
-        <div onClick={() => setShow(false)} className='bg-[#000000B2] w-full h-screen left-0 z-30 opacity-100 fixed top-0'></div>
-        <div className='z-40 lg:h-[90vh] h-[90vh] overflow-y-auto fixed lg:top-10 top-10 bg-white lg:left-20 left-5 right-5 lg:right-20 p-6'>
-          <div className='lg:flex relative'>
-            <img className='lg:right-28 right-10 w-10 h-10 fixed cursor-pointer' onClick={() => setShow(false)} src="./images/close.svg" alt="" />
+        <div onClick={() => setShow(false)} className='bg-[#000000B2] w-full h-screen left-0 z-50 opacity-100 fixed top-0'></div>
+        <div className=' lg:h-[100vh] h-[100vh] z-50 fixed top-0 overflow-y-auto bg-white left-0 right-0 p-6'>
+          <div className='lg:flex lg:mx-20 my-10 relative'>
+            <img className='lg:right-22 right-10 w-12 h-12 fixed cursor-pointer' onClick={() => setShow(false)} src="./images/close.svg" alt="" />
 
             <div className='lg:w-1/2'>
               <img className='lg:w-[37%] lg:fixed lg:h-[82vh] h-[50vh] rounded-xl object-cover' src={'./images/services/' + single.img + '.png'} alt="" />
             </div>
-            <div className='lg:w-1/2 pb-10 mr-10'>
-              <p className="text-blue text-2xl font-bold lg:my-6 my-4">{single.title}</p>
+            <div className='lg:w-1/2 lg:pr-2 pb-10 lg:h-[82vh] overflow-y-auto'>
+              <p className="text-blue text-4xl text-left   font-bold lg:my-6 my-4">{single.title}</p>
               {single.desc}
             </div>
           </div>

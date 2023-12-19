@@ -4,9 +4,9 @@ import HeroSection from '../components/HeroSection';
 
 const Projects = () => {
   const projects = [
-    "Pipeline Fabrication",
-    "Pipeline Fabrication",
-    "Deep Water Breathing Air Cylinder",
+    "Pipeline Painting",
+    "Fabrication Work",
+    "Breathing Air Cylinder",
     "QIT AMP Installation",
     "QIT Camera Installation",
     "QIT Upgrade Scaffolding",
@@ -28,12 +28,13 @@ const Projects = () => {
       <section className='lg:mx-20 mx-6 lg:my-20 my-10'>
         <div className='lg:flex border-y border-[#5E5C84] py-4 mb-10 justify-between'>
           <p className='text-[#5E5C84] text-left'>List of some of our successfully completed projects</p>
-          <button className='bg-blue px-4 sm:my-4 text-white py-1 text-sm'>DOWNLOAD PDF</button>
+          <a href="/azimarine-projects-list.pdf" download><button className='bg-blue px-4 sm:my-4 text-white py-1 text-sm'>DOWNLOAD PDF</button>
+          </a>
         </div>
         <div className='flex flex-wrap justify-between'>
           {
             projects.map((single, index) => <div className='lg:w-[48%] my-4'>
-              <img src={'./images/projects/project-' + parseInt(index+1) + '.png'} alt="" />
+              <img src={'./images/projects/project-' + parseInt(index + 1) + '.png'} alt="" />
               <p className='text-xl text-blue my-4 font-bold text-left'>{single}</p>
             </div>)
           }
