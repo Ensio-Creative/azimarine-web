@@ -2,10 +2,15 @@
 
 import Link from 'next/link';
 import React, { useEffect, useState } from 'react';
+import { usePathname } from 'next/navigation'
+import Popup from 'reactjs-popup';
+import 'reactjs-popup/dist/index.css';
+
 
 const HeaderNav = () => {
   const [open, setOpen] = useState(false)
   const [pos, setPos] = useState(0)
+  const pathname = usePathname()
 
   useEffect(() => {
     const handleScroll = () => {
@@ -20,15 +25,6 @@ const HeaderNav = () => {
     };
   }, []);
 
-  // useEffect(() => {
-  //   interval
-  // }, [])
-
-  // const interval = setInterval(function () {
-  //   setPos(window.scrollY)
-  //   // console.log(pos)
-  // }, 1000);
-
   const openNav = () => {
     document.getElementById("mySidenav").style.width = "100%";
     setOpen(true)
@@ -40,7 +36,7 @@ const HeaderNav = () => {
 
   return (
     <header >
-      <div className={pos > 500 ? 'flex fixed left-0 right-0 w-full lg:px-20 z-50 bg-white text-blue p-4 mx-auto mx-6 justify-between' :
+      <div className={pos > 500 || pathname.includes('services') ? 'flex fixed left-0 right-0 w-full lg:px-20 z-50 bg-white text-blue p-4 mx-auto mx-6 justify-between' :
         'flex fixed left-0 right-0 lg:w-[88%] z-50 lg:bg-transparent sm:bg-white border-b border-[#FFFFFF66] text-white p-4 mx-auto mx-6 justify-between'}>
         <Link href={"/"}>
           <img className='w-16' src="/images/azimarine-logo.png" alt="" />
@@ -49,6 +45,9 @@ const HeaderNav = () => {
           <p className='my-auto'><Link href={"/about"}> Home</Link></p>
           <p className='my-auto'><Link href={"/about"}> About us</Link></p>
           <p className='my-auto'><Link href={"/services"}>Services</Link></p>
+          {/* <Popup arrow trigger={<button> Trigger</button>} position="bottom center">
+            <div>Popup content here !!</div>
+          </Popup> */}
           <p className='my-auto'><Link href={"/policies"}>Policies</Link></p>
           <p className='my-auto'> <Link href={'/csr'}>CSR</Link> </p>
           <p className='my-auto'><Link href={"/projects"}>Projects</Link> </p>

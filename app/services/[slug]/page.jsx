@@ -15,7 +15,7 @@ const single = () => {
     <FrontLayout>
       <div>
         <div className='lg:px-20 lg:py-32 px-4 '>
-          {services.map((single) => stringToSlug(single.title) === route && <div>
+          {services.map((single, index) => stringToSlug(single.title) === route && <div key={index}>
             <p className='lg:text-5xl mb-6 font-bold text-blue'> {single.title}</p>
             <img className='w-full rounded-xl object-cover' src={'/images/services/' + single.img + '.png'} alt="" />
 
