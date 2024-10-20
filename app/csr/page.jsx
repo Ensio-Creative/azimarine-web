@@ -6,7 +6,7 @@ const CSR = () => {
   return (
     <FrontLayout>
       <HeroSection text={"CSR"} img={"csr-header"} />
-      <section className='lg:mx-44 mx-6 lg:mt-20 my-10'>
+      <section className='lg:mx-20 mx-6 lg:mt-20 my-10'>
         <h1 className='lg:text-5xl text-3xl font-bold text-blue'>Corperate Social <br /> Responsibility</h1>
         <p className='text-[#5E5C84] lg:ml-40 my-8 text-left'>Our commitment to corporate social responsibility (CSR) goes beyond mere words; it's ingrained in our very ethos.We adhere to the highest standards of corporate governance, ethics, and goodwill, understanding that our role transcends business. CSR is more than a concept; it's a tangible part of our business practices.
           <br /> <br />

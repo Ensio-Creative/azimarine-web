@@ -9,7 +9,7 @@ const SliderComp = () => {
   return (
     <section>
       <div className='relative'>
-        <div className='absolute z-10 top-0 bg-[#000000] h-[100vh] w-full opacity-70'></div>
+        <div className='absolute z-10 top-0 bg-[#00000073] h-[100vh] w-full opacity-100'></div>
         <Carousel autoplay autoplaySpeed={5000} effect="fade" dots={false}>
           <div>
             <img className='h-[100vh] w-full sm:object-cover' src="./images/hero-1.png" alt="" />

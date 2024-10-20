@@ -26,7 +26,7 @@ export default function Home() {
         We guarantee that our diving spread are not only capable but also safe for use in challenging underwater environments. This includes compliance with the latest industry regulations and best practices, contributing to the overall safety of our diving operations.</div>
     },
     {
-      title: "Design, Construction & Fabrication",
+      title: "Design, Construction and Fabrication",
       img: "service-2",
       desc: <div className='text-[#5E5C84]'>
         Our comprehensive range of fabrication services extends from Pipeline and Structural fabrication to Sub-Sea Manifolds, Well Templates, Jumpers, Riser Clamps, Launchers and Receivers, Spool Piping, Meter Skids, Side-Tap Assemblies, Tanks, and Flowline fabrication. Primarily oriented toward the oil & gas industry and related sectors, we collaborate closely with our clients' engineering, maintenance, and inspection teams to deliver comprehensive system design, deployment, and integration.

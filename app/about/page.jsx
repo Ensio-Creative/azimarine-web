@@ -99,93 +99,100 @@ const AboutPage = () => {
         </p>
       </section>
       <img src="./images/about-img-1.png" className='sm:h-80 object-cover' alt="" />
-      <section className='bg-[#F8F6FE] lg:flex'>
-        <div className='lg:px-20  p-7 my-auto lg:w-[60%]'>
-          <h1 className='lg:text-4xl text-3xl mb-4 text-blue font-bold'>Corporate Pledge of  <br />
-            Commitment & Competence</h1>
-          <p className='text-blue text-left'>We firmly believe that, through the utilization of our extensive human resources, wealth of experience, skilled workforce, and diverse skill sets, we have the capacity to deliver sustainable and standardized solutions on a per project basis. These solutions are characterized by their reliability, trustworthiness, flexibility, and cost-efficiency, meeting and often exceeding the needs and expectations of all our valued clients."
-            <br /> <br />
-            "Our mission is to assist organizations in achieving their corporate objectives by delivering exceptional customer experiences, maintaining quality safety standards, optimizing operational efficiency, ensuring compliance, and promoting sustainability. We achieve this by harnessing the potential of new technology, competent human resources, and constant innovation."
-            <br /> <br />
-
-            "Our mission is to empower organizations in reaching their corporate goals by providing unparalleled customer experiences, upholding rigorous safety standards, enhancing operational efficiency, ensuring full compliance, and championing sustainability. We realize this vision by harnessing the capabilities of cutting-edge technology, skilled human resources, and continuous innovation."</p>
+      <section className='py-12 sm:px-4 lg:flex lg:px-20 '>
+        <div className='lg:p-7 p-4 my-auto lg:w-[50%]'>
+          <h1 className='lg:text-4xl text-3xl mb-6 text-blue font-bold'>Our Mission</h1>
+          <p className='text-[#5E5C84] lg:text-[23px] text-left'>
+            Our mission is to assist organizations in achieving their corporate objectives by delivering exceptional customer experiences, maintaining quality safety standards, optimizing operational efficiency, ensuring compliance, and promoting sustainability. We achieve this by harnessing the potential of new technology, competent human resources, and constant innovation.
+          </p>
         </div>
-        <img className='lg:w-[40%] h-[100vh]' src="./images/abut-img.png" alt="" />
+        <img className='lg:w-[50%]' src="./images/mission.png" alt="" />
+      </section>
+      <section className='py-12 sm:mx-4 lg:flex lg:px-20 '>
+        <div className='lg:p-7 lg:order-1 p-4 my-auto lg:w-[50%]'>
+          <h1 className='lg:text-4xl text-3xl mb-6 text-blue font-bold'>Pledge of Commitment
+            & Competence</h1>
+          <p className='text-[#5E5C84] lg:text-[23px] text-left'>
+            We firmly believe that, through the utilization of our extensive human resources, wealth of experience, skilled workforce, and diverse skill sets, we have the capacity to deliver sustainable and standardized solutions on a per project basis. These solutions are characterized by their reliability, trustworthiness, flexibility, and cost-efficiency, meeting and often exceeding the needs and expectations of all our valued clients.
+          </p>
+        </div>
+        <img className='lg:w-[50%] lg:order-0' src="./images/abt-img.png" alt="" />
+
       </section>
       <section className='lg:p-20 p-6'>
         <h1 className='lg:text-5xl text-3xl sm:mt-6 font-bold text-blue'>Meet the <br /> Management Team</h1>
         <div className='flex flex-wrap mt-4 justify-between'>
-        <div className='bg-[#E8E9EB] lg:w-[32%] my-3 rounded-xl'>
+          <div className='bg-[#E8E9EB] lg:w-[32%] my-3 rounded-xl'>
             <img src="/images/team/micheal-abakam.png" alt="" />
-            <div className='p-6'>
-              <p className='font-bold text-xl text-[#220E5B] '>Engr. Michael Abakam</p>
-              <p className='text-sm text-[#220E5B]'>Managing Director</p>
+            <div className='p-6 bg-[#220E5B] rounded-b-xl text-white'>
+              <p className='font-bold text-xl'>Engr. Michael Abakam</p>
+              <p className='text-sm'>Managing Director</p>
+            </div>
+          </div>
+          <div className='bg-[#E8E9EB] lg:w-[32%] my-3 rounded-xl'>
+            <img src="/images/unknown.png" alt="" />
+            <div className='p-6 bg-[#220E5B] rounded-b-xl text-white'>
+              <p className='font-bold text-xl'>Joachim Osajie</p>
+              <p className='text-sm'>Head of Operations</p>
             </div>
           </div>
           <div className='bg-[#E8E9EB] lg:w-[32%] my-3 rounded-xl'>
             <img src="/images/team/isokobo-abakam.png" alt="" />
-            <div className='p-6'>
-              <p className='font-bold text-xl text-[#220E5B] '>Joachim Osajie</p>
-              <p className='text-sm text-[#220E5B]'>Head of Operations</p>
+            <div className='p-6 bg-[#220E5B] rounded-b-xl text-white'>
+              <p className='font-bold text-xl'>Isokobo Abakam</p>
+              <p className='text-sm'>Business Development</p>
             </div>
           </div>
           <div className='bg-[#E8E9EB] lg:w-[32%] my-3 rounded-xl'>
-            <img src="/images/team/isokobo-abakam.png" alt="" />
-            <div className='p-6'>
-              <p className='font-bold text-xl text-[#220E5B] '>Isokobo Abakam</p>
-              <p className='text-sm text-[#220E5B]'>Business Development</p>
+            <img src="/images/unknown.png" alt="" />
+            <div className='p-6 bg-[#220E5B] rounded-b-xl text-white'>
+              <p className='font-bold text-xl'>Jeuel Lukeson</p>
+              <p className='text-sm'>Contract Administrator</p>
             </div>
           </div>
           <div className='bg-[#E8E9EB] lg:w-[32%] my-3 rounded-xl'>
-            <img src="/images/team/isokobo-abakam.png" alt="" />
-            <div className='p-6'>
-              <p className='font-bold text-xl text-[#220E5B] '>Jeuel Lukeson</p>
-              <p className='text-sm text-[#220E5B]'>Contract Administrator</p>
+            <img src="/images/unknown.png" alt="" />
+            <div className='p-6 bg-[#220E5B] rounded-b-xl text-white'>
+              <p className='font-bold text-xl'>Udeme Sandy</p>
+              <p className='text-sm '>Operation Manager</p>
             </div>
           </div>
           <div className='bg-[#E8E9EB] lg:w-[32%] my-3 rounded-xl'>
-            <img src="/images/team/isokobo-abakam.png" alt="" />
-            <div className='p-6'>
-              <p className='font-bold text-xl text-[#220E5B] '>Udeme Sandy</p>
-              <p className='text-sm text-[#220E5B]'>Operation Manager</p>
+            <img src="/images/unknown.png" alt="" />
+            <div className='p-6 bg-[#220E5B] rounded-b-xl text-white'>
+              <p className='font-bold text-xl '>Engr. Salvation Woke</p>
+              <p className='text-sm '>Projects Manager</p>
             </div>
           </div>
           <div className='bg-[#E8E9EB] lg:w-[32%] my-3 rounded-xl'>
-            <img src="/images/team/isokobo-abakam.png" alt="" />
-            <div className='p-6'>
-              <p className='font-bold text-xl text-[#220E5B] '>Engr. Salvation Woke</p>
-              <p className='text-sm text-[#220E5B]'>Projects Manager</p>
+            <img src="/images/unknown.png" alt="" />
+            <div className='p-6 bg-[#220E5B] rounded-b-xl text-white'>
+              <p className='font-bold text-xl'>Bar. Ubongabasi Udoh</p>
+              <p className='text-sm'>Secretary</p>
             </div>
           </div>
           <div className='bg-[#E8E9EB] lg:w-[32%] my-3 rounded-xl'>
-            <img src="/images/team/isokobo-abakam.png" alt="" />
-            <div className='p-6'>
-              <p className='font-bold text-xl text-[#220E5B] '>Bar. Ubongabasi Udoh</p>
-              <p className='text-sm text-[#220E5B]'>Secretary</p>
-            </div>
-          </div>
-          <div className='bg-[#E8E9EB] lg:w-[32%] my-3 rounded-xl'>
-            <img src="/images/team/isokobo-abakam.png" alt="" />
-            <div className='p-6'>
-              <p className='font-bold text-xl text-[#220E5B] '>Capt. Ovat Peter</p>
-              <p className='text-sm text-[#220E5B]'>Human Resources Manager</p>
+            <img src="/images/unknown.png" alt="" />
+            <div className='p-6 bg-[#220E5B] rounded-b-xl text-white'>
+              <p className='font-bold text-xl'>Capt. Ovat Peter</p>
+              <p className='text-sm'>Human Resources Manager</p>
             </div>
           </div>
         </div>
       </section>
 
       <section className='lg:px-20 px-6 lg:flex lg:py-20 py-10  bg-[#F9F9F9]'>
-        <div className='lg:w-[30%]'>
+        <div className='lg:w-[35%]'>
           <h1 className='lg:text-5xl text-3xl font-bold text-blue'>How We Work</h1>
           <p className='text-blue'>AZIMAG - Success Factor</p>
         </div>
-        <div className='flex lg:w-[70%] sm:mt-4 flex-wrap justify-between'>
+        <div className='flex lg:w-[65%] sm:mt-4 flex-wrap justify-between'>
           {
             work.map((single, index) =>
-              <div key={index} className='lg:w-[49%] bg-white p-8 w-[98%] my-2'>
+              <div key={index} className='lg:w-[48%] bg-white p-8 w-[98%] my-4'>
                 <p className='my-4 font-bold text-2xl text-blue'>0{index + 1}</p>
                 <div className='border-t border-t-blue'>
-                  <h6 className='text-lg font-bold text-blue my-4'>{single.title}</h6>
+                  <h6 className='text-[26px] font-bold text-blue my-4'>{single.title}</h6>
                   <p className='text-[#5E5C84] text-left'>{single.text}</p>
                 </div>
               </div>
