@@ -6,6 +6,7 @@ import Contact from "./components/Contact";
 import SliderComp from "./components/SliderComp";
 import FrontLayout from "./layout/FrontLayout";
 import Slider from "react-slick";
+import { stringToSlug } from '@/utils/stringtoslug';
 
 export default function Home() {
   const [show, setShow] = useState(false)
@@ -78,7 +79,7 @@ export default function Home() {
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 1.1 ,
+          slidesToShow: 1.1,
           slidesToScroll: 1
         }
       }
@@ -123,15 +124,19 @@ export default function Home() {
             </button>
           </Link>
         </div>
-        <div className="my-10">
+        <div className="my-10 sm:w-[94%]">
           <Slider {...settings}>
             {
               services.map((single, index) => <div className="sm:px-4">
-                <div className="relative">
-                  <img className='cursor-pointer' onClick={() => { setShow(true), setSingle(single) }} src={'./images/service' + parseInt(index + 1) + '.png'} alt="" />
-                  <img onClick={() => { setShow(true), setSingle(single) }} src="./images/arrow-right.svg" className="absolute cursor-pointer bottom-10 right-10 w-10" alt="" />
-                </div>
-                <p onClick={() => { setShow(true), setSingle(single) }} className="text-blue text-left cursor-pointer text-xl font-bold my-6">{single.title}</p>
+                <Link href={`/services/${stringToSlug(single.title)}`}>
+                  <div className="relative">
+                    <img className='cursor-pointer' src={'./images/service' + parseInt(index + 1) + '.png'} alt="" />
+                    <img src="./images/arrow-right.svg" className="absolute cursor-pointer bottom-10 right-10 w-10" alt="" />
+                  </div>
+                </Link>
+                <Link href={`/services/${stringToSlug(single.title)}`}>
+                  <p className="text-blue text-left cursor-pointer text-xl font-bold my-6">{single.title}</p>
+                </Link>
               </div>)
             }
             {/* <div className="sm:px-4">

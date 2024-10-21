@@ -108,7 +108,7 @@ const AboutPage = () => {
         </div>
         <img className='lg:w-[50%]' src="./images/mission.png" alt="" />
       </section>
-      <section className='py-12 sm:mx-4 lg:flex lg:px-20 '>
+      <section className='py-0 sm:mx-4 lg:flex lg:px-20 '>
         <div className='lg:p-7 lg:order-1 p-4 my-auto lg:w-[50%]'>
           <h1 className='lg:text-4xl text-3xl mb-6 text-blue font-bold'>Pledge of Commitment
             & Competence</h1>

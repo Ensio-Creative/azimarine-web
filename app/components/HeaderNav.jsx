@@ -60,7 +60,7 @@ const HeaderNav = () => {
         </div>
         <div id="mySidenav" className='sidenav'>
           <div className="w-[90%] mx-auto">
-            <div onClick={() => closeNav()} className="float-right flex text-4xl cursor-pointer"> <p className='text-xl font-black my-auto mr-3'>CLOSE MENU</p> <img className='w-4' src="./images/close-bar.svg" alt="" /></div>
+            <div onClick={() => closeNav()} className="float-right flex text-4xl cursor-pointer"> <p className='text-xl font-black my-auto mr-3'>CLOSE MENU</p> <img className='w-4' src="/images/close-bar.svg" alt="" /></div>
             <p className='my-auto pt-20 font-semibold uppercase border-b border-blue pb-3 text-2xl'><Link href={"/"}> Home</Link></p>
             <p className='my-auto text-2xl font-semibold uppercase border-b border-blue py-5'><Link href={"/about"}>About us</Link></p>
 

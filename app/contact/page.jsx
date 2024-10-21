@@ -53,8 +53,8 @@ const Contact = () => {
             </button>
           </div>
         </div>
-        <div className='lg:w-[40%] '>
-          <p className='text-4xl text-blue font-bold pb-4'>Send us a message</p>
+        <div className='lg:w-[40%] sm:mt-8'>
+          <p className='lg:text-4xl text-3xl text-left text-blue font-bold pb-4'>Send us a message</p>
           <div className='border border-[#D9D9D9] sm:mt-4 p-6 rounded-xl'>
             <input type="text" className='p-3 rounded-md w-full border border-[#D9D9D9] mb-2' placeholder='Full Name*' />
             <input type="text" className='p-3 rounded-md w-full border border-[#D9D9D9] my-2' placeholder='Email Address*' />

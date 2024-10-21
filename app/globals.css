@@ -8,6 +8,7 @@
 body {
   font-family: 'Space Grotesk', sans-serif;
   margin-bottom: -50px;
+  overflow-x: hidden;
 }
 
 ul li {
