@@ -21,8 +21,8 @@ const SliderComp = () => {
             <img className='h-[100vh] w-full sm:object-cover' src="./images/hero-3.png" alt="" />
           </div>
         </Carousel>
-        <div className='absolute lg:left-20 left-10 top-52 z-20 lg:w-[60%] w-[80%]'>
-          <h1 className='lg:text-7xl text-5xl text-white font-bold '> An indigenous
+        <div className='absolute lg:left-20 left-10 lg:top-52 top-80 z-20 lg:w-[60%] w-[80%]'>
+          <h1 className='lg:text-7xl text-4xl text-white font-bold '> An indigenous
             company driven by experience, quality
             and innovation.</h1>
         </div>
@@ -31,7 +31,7 @@ const SliderComp = () => {
         </div>
       </div>
       <div ref={ref} className='lg:py-20 py-10'>
-        <h1 className='lg:text-7xl text-4xl text-blue p-10 lg:ml-32'>
+        <h1 className='lg:text-7xl text-2xl text-blue p-10 lg:ml-32'>
           We are committed to providing services and solutions that meet the growing demand across different sectors where <br /> we operate.
         </h1>
       </div>

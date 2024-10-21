@@ -124,22 +124,22 @@ export default function Home() {
             </button>
           </Link>
         </div>
-        <div className="my-10 sm:w-[94%]">
-          <Slider {...settings}>
-            {
-              services.map((single, index) => <div className="sm:px-4">
-                <Link href={`/services/${stringToSlug(single.title)}`}>
-                  <div className="relative">
-                    <img className='cursor-pointer' src={'./images/service' + parseInt(index + 1) + '.png'} alt="" />
-                    <img src="./images/arrow-right.svg" className="absolute cursor-pointer bottom-10 right-10 w-10" alt="" />
-                  </div>
-                </Link>
-                <Link href={`/services/${stringToSlug(single.title)}`}>
-                  <p className="text-blue text-left cursor-pointer text-xl font-bold my-6">{single.title}</p>
-                </Link>
-              </div>)
-            }
-            {/* <div className="sm:px-4">
+        <div className="my-10 lg:grid grid-cols-3 gap-4">
+          {/* <Slider {...settings}> */}
+          {
+            services.map((single, index) => <div className="sm:px-4">
+              <Link href={`/services/${stringToSlug(single.title)}`}>
+                <div className="relative">
+                  <img className='cursor-pointer' src={'./images/service' + parseInt(index + 1) + '.png'} alt="" />
+                  <img src="./images/arrow-right.svg" className="absolute cursor-pointer bottom-10 right-10 w-10" alt="" />
+                </div>
+              </Link>
+              <Link href={`/services/${stringToSlug(single.title)}`}>
+                <p className="text-blue text-left cursor-pointer text-xl font-bold my-6">{single.title}</p>
+              </Link>
+            </div>)
+          }
+          {/* <div className="sm:px-4">
               <Link href={"/services"}>
                 <div className="relative">
                   <img src="./images/service1.png" alt="" />
@@ -166,10 +166,10 @@ export default function Home() {
               </Link>
               <p className="text-blue my-6 text-left lg:text-lg font-bold">Corrosion Control</p>
             </div> */}
-          </Slider>
+          {/* </Slider> */}
         </div>
       </section>
-      <section className="lg:mx-20 mx-6 my-10">
+      <section className="lg:mx-20 mx-6 my-20">
         <h1 className="lg:text-5xl text-3xl font-bold text-blue">Managing Director <br />
           Statement</h1>
         <div className="lg:flex my-10">

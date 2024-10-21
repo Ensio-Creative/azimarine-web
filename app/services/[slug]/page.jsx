@@ -14,12 +14,12 @@ const single = () => {
   return (
     <FrontLayout>
       <div>
-        <div className='lg:px-20 lg:py-32 py-28 px-4 '>
+        <div className='lg:px-20 lg:py-32 lg:py-28 sm:pb-20 sm:pt-28 px-4 '>
           {services.map((single, index) => stringToSlug(single.title) === route && <div key={index}>
-            <p className='lg:text-5xl text-3xl mb-6 font-bold text-blue sm:text-left'> {single.title}</p>
-            <img className='w-full rounded-xl object-cover' src={'/images/services/' + single.img + '.png'} alt="" />
+            <p className='lg:text-5xl text-3xl lg:w-1/2 lg:mb-10 mb-6 font-bold text-blue sm:text-left'> {single.title}</p>
+            <img className='w-full lg:h-[550px] rounded-xl object-cover' src={'/images/services/' + single.img + '.png'} alt="" />
 
-            <div className='lg:w-[70%] lg:ml-auto mt-6'>
+            <div className='lg:w-[70%] lg:ml-auto mt-14'>
               {single.desc}
             </div>
           </div>)}

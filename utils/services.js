@@ -14,7 +14,7 @@ export const services = [
       We guarantee that our diving spread are not only capable but also safe for use in challenging underwater environments. This includes compliance with the latest industry regulations and best practices, contributing to the overall safety of our diving operations.</div>
   },
   {
-    title: "Design, Construction & Fabrication",
+    title: "Design, Construction and Fabrication",
     img: "service-2",
     desc: <div className='text-[#5E5C84]'>
       Our comprehensive range of fabrication services extends from Pipeline and Structural fabrication to Sub-Sea Manifolds, Well Templates, Jumpers, Riser Clamps, Launchers and Receivers, Spool Piping, Meter Skids, Side-Tap Assemblies, Tanks, and Flowline fabrication. Primarily oriented toward the oil & gas industry and related sectors, we collaborate closely with our clients' engineering, maintenance, and inspection teams to deliver comprehensive system design, deployment, and integration.
@@ -35,7 +35,7 @@ export const services = [
       <br /> <br />
       rom surface area preparation to pipeline coating within the oil and gas sector, we stand as your foremost indigenous contractors and project partners, offering industry-standard corrosion management solutions tailored to address the comprehensive range of topside, sub-surface, and subsea infrastructure needs stemming from corrosion-related challenges.
       <br />
-      <p className='text-[#FE0000] mt-3'> FUNFACT: THE ANNUAL COST OF CORROSION TO THE OIL AND GAS INDSTRY GLOBALLY ACCORDING TO NACE INTERNATIONAL IS $60 BILLION USD.</p>
+      <p className='text-[#FE0000] mt-10'> FUNFACT: THE ANNUAL COST OF CORROSION TO THE OIL AND GAS INDSTRY GLOBALLY ACCORDING TO NACE INTERNATIONAL IS $60 BILLION USD.</p>
     </div>
   },
   {

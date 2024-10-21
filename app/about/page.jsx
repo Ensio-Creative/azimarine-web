@@ -109,7 +109,7 @@ const AboutPage = () => {
         <img className='lg:w-[50%]' src="./images/mission.png" alt="" />
       </section>
       <section className='py-0 sm:mx-4 lg:flex lg:px-20 '>
-        <div className='lg:p-7 lg:order-1 p-4 my-auto lg:w-[50%]'>
+        <div className='lg:p-10 lg:order-1 p-4 my-auto lg:w-[50%]'>
           <h1 className='lg:text-4xl text-3xl mb-6 text-blue font-bold'>Pledge of Commitment
             & Competence</h1>
           <p className='text-[#5E5C84] lg:text-[23px] text-left'>
@@ -121,57 +121,57 @@ const AboutPage = () => {
       </section>
       <section className='lg:p-20 p-6'>
         <h1 className='lg:text-5xl text-3xl sm:mt-6 font-bold text-blue'>Meet the <br /> Management Team</h1>
-        <div className='flex flex-wrap mt-4 justify-between'>
-          <div className='bg-[#E8E9EB] lg:w-[32%] my-3 rounded-xl'>
+        <div className='lg:grid grid-cols-3 gap-6 mt-4 justify-between'>
+          <div className='bg-[#E8E9EB] lg:my-3 my-8 rounded-xl'>
             <img src="/images/team/micheal-abakam.png" alt="" />
             <div className='p-6 bg-[#220E5B] rounded-b-xl text-white'>
               <p className='font-bold text-xl'>Engr. Michael Abakam</p>
               <p className='text-sm'>Managing Director</p>
             </div>
           </div>
-          <div className='bg-[#E8E9EB] lg:w-[32%] my-3 rounded-xl'>
+          <div className='bg-[#E8E9EB] lg:my-3 my-8 rounded-xl'>
             <img src="/images/unknown.png" alt="" />
             <div className='p-6 bg-[#220E5B] rounded-b-xl text-white'>
               <p className='font-bold text-xl'>Joachim Osajie</p>
               <p className='text-sm'>Head of Operations</p>
             </div>
           </div>
-          <div className='bg-[#E8E9EB] lg:w-[32%] my-3 rounded-xl'>
+          <div className='bg-[#E8E9EB] lg:my-3 my-8 rounded-xl'>
             <img src="/images/team/isokobo-abakam.png" alt="" />
             <div className='p-6 bg-[#220E5B] rounded-b-xl text-white'>
               <p className='font-bold text-xl'>Isokobo Abakam</p>
               <p className='text-sm'>Business Development</p>
             </div>
           </div>
-          <div className='bg-[#E8E9EB] lg:w-[32%] my-3 rounded-xl'>
+          <div className='bg-[#E8E9EB] lg:my-3 my-8 rounded-xl'>
             <img src="/images/unknown.png" alt="" />
             <div className='p-6 bg-[#220E5B] rounded-b-xl text-white'>
               <p className='font-bold text-xl'>Jeuel Lukeson</p>
               <p className='text-sm'>Contract Administrator</p>
             </div>
           </div>
-          <div className='bg-[#E8E9EB] lg:w-[32%] my-3 rounded-xl'>
+          <div className='bg-[#E8E9EB] lg:my-3 my-8 rounded-xl'>
             <img src="/images/unknown.png" alt="" />
             <div className='p-6 bg-[#220E5B] rounded-b-xl text-white'>
               <p className='font-bold text-xl'>Udeme Sandy</p>
               <p className='text-sm '>Operation Manager</p>
             </div>
           </div>
-          <div className='bg-[#E8E9EB] lg:w-[32%] my-3 rounded-xl'>
+          <div className='bg-[#E8E9EB] lg:my-3 my-8 rounded-xl'>
             <img src="/images/unknown.png" alt="" />
             <div className='p-6 bg-[#220E5B] rounded-b-xl text-white'>
               <p className='font-bold text-xl '>Engr. Salvation Woke</p>
               <p className='text-sm '>Projects Manager</p>
             </div>
           </div>
-          <div className='bg-[#E8E9EB] lg:w-[32%] my-3 rounded-xl'>
+          <div className='bg-[#E8E9EB] lg:my-3 my-8 rounded-xl'>
             <img src="/images/unknown.png" alt="" />
             <div className='p-6 bg-[#220E5B] rounded-b-xl text-white'>
               <p className='font-bold text-xl'>Bar. Ubongabasi Udoh</p>
               <p className='text-sm'>Secretary</p>
             </div>
           </div>
-          <div className='bg-[#E8E9EB] lg:w-[32%] my-3 rounded-xl'>
+          <div className='bg-[#E8E9EB] lg:my-3 my-8 rounded-xl'>
             <img src="/images/unknown.png" alt="" />
             <div className='p-6 bg-[#220E5B] rounded-b-xl text-white'>
               <p className='font-bold text-xl'>Capt. Ovat Peter</p>
