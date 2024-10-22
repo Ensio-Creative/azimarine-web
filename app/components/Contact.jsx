@@ -11,10 +11,10 @@ const Contact = () => {
         </p>
         <button className="flex my-auto justify-between py-2 w-44 sm:mb-4 rounded-full px-3">
           <p className="text-lg text-[#220E5B] my-auto">Get in touch</p>
-          <img className="w-8" src="./images/arrow-right.svg" alt="" />
+          <img className="w-8" src="/images/arrow-right.svg" alt="" />
         </button>
       </div>
-      <img className=' object-fit' src="./images/get-in-touch.png" alt="" />
+      <img className=' object-fit' src="/images/get-in-touch.png" alt="" />
 
     </section>
   );

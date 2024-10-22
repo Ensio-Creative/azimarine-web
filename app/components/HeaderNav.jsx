@@ -55,7 +55,7 @@ const HeaderNav = () => {
               Services
               {/* </Link> */}
             </p>
-            {pos > 500 ? <img className={service ? 'w-3 my-auto h-2 ml-2 rotate-180' : 'w-3 my-auto h-2 ml-2'} src="/images/drop.svg" alt="" /> :
+            {pathname.includes('services') ? <img className={service ? 'w-3 my-auto h-2 ml-2 rotate-180' : 'w-3 my-auto h-2 ml-2'} src="/images/drop.svg" alt="" /> : pos > 500 ? <img className={service ? 'w-3 my-auto h-2 ml-2 rotate-180' : 'w-3 my-auto h-2 ml-2'} src="/images/drop.svg" alt="" /> :
               <img className={service ? 'w-3 my-auto h-2 rotate-180 ml-2' : 'w-3 my-auto h-2 ml-2'} src="/images/down-2.svg" alt="" />}
           </div>
 
