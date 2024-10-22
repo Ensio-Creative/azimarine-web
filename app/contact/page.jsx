@@ -3,6 +3,57 @@ import FrontLayout from '../layout/FrontLayout';
 import HeroSection from '../components/HeroSection';
 
 const Contact = () => {
+
+
+  const [name, setName] = useState("")
+  const [email, setEmail] = useState("")
+  const [subject, setSubject] = useState("")
+  const [message, setMessage] = useState("")
+  const [company, setCompany] = useState("")
+
+  const [loading, setLoading] = useState(false)
+  const sendMessage = () => {
+    setLoading(true)
+    fetch("https://formsubmit.co/ajax/info@azimarine.com", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+      body: JSON.stringify({
+        name: name,
+        message: message,
+        subject: subject,
+        email: email,
+        company: company
+      }),
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        console.log(data);
+        if (data.success === "true") {
+          alert("Message sent Successfully!")
+          // message.open({
+          //   type: 'success',
+          //   content: '',
+          // });
+        }
+        setLoading(false)
+
+      })
+      .catch((error) => {
+        console.log(error);
+        // alert("An error occured, Please try again", error.text);
+        // message.open({
+        //   type: 'error',
+        //   content: "An error occured, Please try again",
+        // });
+        alert('An error occured, Please try again')
+        setLoading(false)
+        // messageApi.info("An error occured, Please try again", error.text);
+      });
+  }
+
   return (
     <FrontLayout>
       <HeroSection text={"How can we help you?"} img={"contact-us"} />
@@ -56,12 +107,12 @@ const Contact = () => {
         <div className='lg:w-[40%] sm:mt-8'>
           <p className='lg:text-4xl text-3xl text-left text-blue font-bold pb-4'>Send us a message</p>
           <div className='border border-[#D9D9D9] sm:mt-4 p-6 rounded-xl'>
-            <input type="text" className='p-3 rounded-md w-full border border-[#D9D9D9] mb-2' placeholder='Full Name*' />
-            <input type="text" className='p-3 rounded-md w-full border border-[#D9D9D9] my-2' placeholder='Email Address*' />
-            <input type="text" className='p-3 rounded-md w-full border border-[#D9D9D9] my-2' placeholder='Company Name*' />
-            <input type="text" className='p-3 rounded-md w-full border border-[#D9D9D9] my-2' placeholder='Subject*' />
-            <textarea className='p-3 rounded-md w-full border border-[#D9D9D9] h-32 my-2' placeholder='Message*' ></textarea>
-            <button className='text-[#220E5B] font-semibold p-3 rounded-md my-2 bg-[#F1C405] w-full'>Send Message</button>
+            <input value={name} onChange={e => setName(e.target.value)} type="text" className='p-3 rounded-md w-full border border-[#D9D9D9] mb-2' placeholder='Full Name*' />
+            <input value={email} onChange={e => setEmail(e.target.value)} type="text" className='p-3 rounded-md w-full border border-[#D9D9D9] my-2' placeholder='Email Address*' />
+            <input value={company} onChange={e => setCompany(e.target.value)} type="text" className='p-3 rounded-md w-full border border-[#D9D9D9] my-2' placeholder='Company Name*' />
+            <input value={subject} onChange={e => setSubject(e.target.value)} type="text" className='p-3 rounded-md w-full border border-[#D9D9D9] my-2' placeholder='Subject*' />
+            <textarea value={message} onChange={e => setMessage(e.target.value)} className='p-3 rounded-md w-full border border-[#D9D9D9] h-32 my-2' placeholder='Message*' ></textarea>
+            <button onClick={() => sendMessage()} className='text-[#220E5B] font-semibold p-3 rounded-md my-2 bg-[#F1C405] w-full'>{loading ? 'sending...' : 'Send Message'}</button>
           </div>
         </div>
       </div>
