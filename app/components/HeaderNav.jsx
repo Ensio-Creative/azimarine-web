@@ -46,7 +46,7 @@ const HeaderNav = () => {
           <img className='w-16' src="/images/azimarine-logo.png" alt="" />
         </Link>
         <div className='w-[45%] sm:hidden flex justify-between text-sm'>
-          <p className='my-auto'><Link href={"/about"}> Home</Link></p>
+          <p className='my-auto'><Link href={"/"}> Home</Link></p>
           <p className='my-auto'><Link href={"/about"}> About us</Link></p>
 
           <div className='flex cursor-pointer' onClick={() => showServices(!service)}>

@@ -170,7 +170,7 @@ export default function Home() {
         </div>
       </section>
       <section className="lg:mx-20 mx-6 my-20">
-        <h1 className="lg:text-5xl text-3xl font-bold text-blue">Managing Director <br />
+        <h1 className="lg:text-5xl text-3xl font-bold text-blue">Managing Director's <br />
           Statement</h1>
         <div className="lg:flex my-10">
           <img src="./images/md.png" alt="" />

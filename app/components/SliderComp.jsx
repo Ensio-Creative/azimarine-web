@@ -21,7 +21,7 @@ const SliderComp = () => {
             <img className='h-[100vh] w-full sm:object-cover' src="./images/hero-3.png" alt="" />
           </div>
         </Carousel>
-        <div className='absolute lg:left-20 left-10 lg:top-52 top-80 z-20 lg:w-[60%] w-[80%]'>
+        <div className='absolute lg:left-20 left-10 lg:top-60 top-80 z-20 lg:w-[60%] w-[80%]'>
           <h1 className='lg:text-7xl text-4xl text-white font-bold '> An indigenous
             company driven by experience, quality
             and innovation.</h1>
